@@ -14,35 +14,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /*var t = total(50,100)
+        val human = Human("佐藤", 26, "旅行")      // 名前を佐藤、年齢26歳で、Humanのインスタンスを作る
 
-        Log.d("kotlintest",t.toString())
+        human.say()
+        human.think()
 
-        val messageView: TextView = findViewById(R.id.message_view)
-        messageView.text = t.toString() */
-
-        val dog = Dog("ポチ", 3)      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
-
-        dog.say()  // ポチが吠えます（ログ出力）
-        Log.d("kotlintest", "犬の名前は" + dog.name + "です。")
-        Log.d("kotlintest", "犬の年齢は" + dog.age + "歳です。")
-
-        val bigdog = BigDog("ハチ", 10)    // 名前をハチ、年齢10歳で、Dogインスタンスを作る
-        bigdog.say()  // ハチが吠えます（ログ出力）
-        Log.d("kotlintest", "犬の名前は" + bigdog.name + "です。")
-        Log.d("kotlintest", "犬の年齢は" + bigdog.age + "歳です。")
-
-        val messageView: TextView = findViewById(R.id.message_view)
-        messageView.text = "犬の名前は" + dog.name + "です。"
+        val human2 = Human("彰彦", 40, "写真")    // 名前を彰彦、年齢40歳で、Humanインスタンスを作る
+        human2.say()
+        human2.think()
     }
 
-    private fun total(first:Int,last:Int): Int {
-        var sum = 0
-        for (i in first .. last){
-            sum += i
-        }
-
-
-        return sum
-    }
 }

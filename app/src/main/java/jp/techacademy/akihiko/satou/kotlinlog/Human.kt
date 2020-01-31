@@ -3,8 +3,10 @@ package jp.techacademy.akihiko.satou.kotlinlog
 import android.util.Log
 
 open class Human: Animal, Thinkable {
+    var hobby: String
     // 引数付きコンストラクタ
-    constructor(name: String, age: Int,hobby: String): super(name, age, hobby) {
+    constructor(name: String, age: Int,hobby: String): super(name, age){
+        this.hobby = hobby
     }
 
     // Animalクラスのメソッドをオーバーライド
@@ -14,6 +16,6 @@ open class Human: Animal, Thinkable {
 
     //Thinkableクラスのメソッドをオーバーライド
     override fun think() {
-        Log.d("kotlintest", "「私は" + this.hobby + "について考える。」")
+        Log.d("kotlintest", "「私は" + hobby + "について考える。」")
     }
 }

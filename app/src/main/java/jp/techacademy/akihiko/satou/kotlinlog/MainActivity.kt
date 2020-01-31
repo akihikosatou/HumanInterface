@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         human.say()
         human.think()
 
-        val human2 = Human("彰彦", 40, "写真")    // 名前を彰彦、年齢40歳で、Humanインスタンスを作る
+        val human2 = Human("田中", 40, "写真")    // 名前を彰彦、年齢40歳で、Humanインスタンスを作る
         human2.say()
         human2.think()
     }
